@@ -35,8 +35,8 @@ echo "HISAT2 finished running!"
 
 # # get gtf
 wget http://ftp.ensembl.org/pub/release-106/gtf/homo_sapiens/Homo_sapiens.GRCh38.106.gtf.gz
-# featureCounts -S 2 -a ../hg38/Homo_sapiens.GRCh38.106.gtf -o quants/demo_featurecounts.txt HISAT2/demo_trimmed.bam
-# echo "featureCounts finished running!"
+featureCounts -S 2 -a Homo_sapiens.GRCh38.106.gtf.gz -o quants/demo_featurecounts.txt HISAT2/demo_trimmed.bam
+echo "featureCounts finished running!"
 
 
 duration=$SECONDS
